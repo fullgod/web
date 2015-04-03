@@ -1,0 +1,23 @@
+#login h1 { 
+	display: none; 
+}
+#login h1.text-white { 
+	display: block; 
+}
+.photo-form-wrapper input[type="submit"]{ 
+	background-color: #e74c3c;
+	border-color: #e74c3c;
+	max-width: 155px;
+}
+.photo-form-wrapper p a,
+.photo-form-wrapper p {
+	color: #fff; 
+}
+input#rememberme {
+	width: auto;
+	margin: 0 15px 15px 0;
+	display: inline-block;
+}
+input {
+	color: #333;
+}

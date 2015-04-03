@@ -1,0 +1,89 @@
+select option, select {
+	font-family: sans-serif !important;	
+}
+.ebor-header-options img {
+	max-width: 135px;
+	padding: 2px;
+	-webkit-transition: opacity 400ms ease-in-out;
+	-moz-transition: opacity 400ms ease-in-out;
+	-ms-transition: opacity 400ms ease-in-out;
+	-o-transition: opacity 400ms ease-in-out;
+	transition: opacity 400ms ease-in-out;
+	border: 1px solid #ccc;
+}
+.ebor-header-options .header-image.active img {
+	opacity: 0.2;
+}
+.ebor-header-options .header-image.active span {
+	opacity: 1;
+	border: 3px solid #3498db;
+}
+.ebor-header-options .header-image,
+.ebor-header-options li {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.ebor-header-options li {
+	width: 16.5%;
+}
+.ebor-header-options .header-image span {
+	position: absolute;
+	top: 50%;
+	left: 3px;
+	right: 3px;
+	padding: 3px 10px;
+	display: block;
+	text-align: center;
+	color: #2c2c2c;
+	opacity: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	-webkit-transition: opacity 400ms ease-in-out;
+	-moz-transition: opacity 400ms ease-in-out;
+	-ms-transition: opacity 400ms ease-in-out;
+	-o-transition: opacity 400ms ease-in-out;
+	transition: opacity 400ms ease-in-out;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.ebor-header-options .header-image:hover img {
+	opacity: 0.2;
+}
+.ebor-header-options .header-image:hover span {
+	opacity: 1;
+} 
+.post-type-portfolio #formatdiv {
+	display: none;
+}
+.rs-update-notice-wrap {
+	display: none !important;
+}
+
+div.wpb_vc_param_value.content.textarea_html {
+	clear: both;
+	padding-top: 5px;
+}
+.vc_default-templates .vc_templates-image {
+	background-size: cover !important;
+	background-position: center top !important;
+}
+.vc_default-templates .vc_template > .wpb_wrapper:hover .wpb_single_image > .wpb_wrapper > div {
+	background-position: center bottom !important;
+	opacity: 0.6;
+}
+.wpb-layout-element-button .pivot-vc-block {
+	background-image: url(vc-icon.png);
+}
+.pivot-vc-block .wpb_element_wrapper,
+.vc_element-icon.pivot-vc-block {
+	background-image: url(vc-icon.png);
+}
+.pivot-vc-block.wpb_content_element > .wpb_element_wrapper {
+    background-image: url(vc-icon.png);
+}
+.wpb_my_bartag[data-element_type=pivot-vc-block] {
+    background-image: url(vc-icon.png);
+}

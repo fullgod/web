@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: pivot/search.php:1
+msgid " item"
+msgstr ""
+
+#. Text in function
+#: pivot/search.php:1
+msgid " items"
+msgstr ""
+
+#. Text in function
+#: pivot/search.php:1
+msgid " matching"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:27
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:27
+msgid "0 Comments"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:27
+msgid "1 Comment"
+msgstr ""
+
+#. Text in echo
+#: pivot/404.php:21
+msgid "404"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "BBPress Forums Sidebar"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Blog Sidebar"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "BuddyPress Sidebar"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:1
+msgid "Cancel"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Dismiss this notice"
+msgstr ""
+
+#. Text in function
+#: pivot/archive-download.php:19
+msgid "Downloads"
+msgstr ""
+
+#. Text in function
+#: pivot/page_builder_blocks/page_section_block.php:166
+msgid "Edit Block"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:1
+msgid "Email *"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Footer Navigation"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Footer Sidebar %d"
+msgstr ""
+
+#. Text in function
+#: pivot/search.php:1
+msgid "Found "
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Fullscreen Navigation"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Install Plugins"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Install Required Plugins"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. Text in echo
+#: pivot/404.php:22
+msgid "Let's get back on track..."
+msgstr ""
+
+#. Text in function
+#: pivot/header/content-header-overlay.php:29
+#: pivot/header/content-header-top.php:29
+msgid "Login"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:1
+msgid "Name *"
+msgstr ""
+
+#. Text in echo
+#: pivot/woocommerce/loop/no-products-found.php:
+msgid "No products were found matching your selection."
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Offscreen Navigation"
+msgstr ""
+
+#. Text in echo
+#: pivot/404.php:22
+msgid "Oh dear, we seem to have led you astray!"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Page With Sidebar, Sidebar"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. Text in function
+#: pivot/author.php:1
+msgid "Posts By:"
+msgstr ""
+
+#. Text in function
+#: pivot/archive.php:1
+msgid "Posts In:"
+msgstr ""
+
+#. Text in echo
+#: pivot/loop/content-post-list.php:15
+msgid "Published "
+msgstr ""
+
+#. Text in echo
+#: pivot/loop/content-post-grid.php:13
+#: pivot/loop/content-post-preview.php:10
+#: pivot/loop/content-post-grid-sidebar.php:13
+msgid "Published on "
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Return to the dashboard"
+msgstr ""
+
+#. Text in function
+#: pivot/woocommerce/content-product.php:37
+msgid "Sale!"
+msgstr ""
+
+#. Text in echo
+#: pivot/bbpress/form-search.php:14
+msgid "Search for:"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Shop Sidebar"
+msgstr ""
+
+#. Text in function
+#: pivot/header/content-header-overlay.php:29
+#: pivot/header/content-header-top.php:29
+msgid "Signup"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "Something went wrong."
+msgstr ""
+
+#. Text in echo
+#: pivot/loop/content-none.php:
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Standard Navigation"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:1
+msgid "Submit"
+msgstr ""
+
+#. Text in function
+#: pivot/inc/content-post-single-standard.php:9
+#: pivot/inc/content-post-single-sidebar.php:10
+msgid "Tags: "
+msgstr ""
+
+#. Text in echo
+#: pivot/404.php:23
+msgid "Take Me Home"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/class-tgm-plugin-activation.php:1
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:1
+msgid "Website"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Widgets to be displayed in the BBPress Forums Sidebar."
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Widgets to be displayed in the BuddyPress Sidebar."
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Widgets to be displayed in the blog sidebar."
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Widgets to be displayed in the page with sidebar, sidebar."
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:1
+msgid "Widgets to be displayed in the shop sidebar."
+msgstr ""
+
+#. Text in function
+#: pivot/comments.php:1
+msgid "Your Comment Here"
+msgstr ""
+
+#. Text in function
+#: pivot/admin/theme_functions.php:482
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in echo
+#: pivot/searchform.php:3
+#: pivot/product-searchform.php:3
+#: pivot/bbpress/form-search.php:16
+msgid "type and hit enter"
+msgstr ""

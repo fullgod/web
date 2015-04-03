@@ -1,0 +1,226 @@
+/**
+ *  Master Slider Sample Skin
+ *
+ * This file does not load by Masterslider and is just for those who wants 
+ * to know how skin file is structured and let them to create their own custom skin
+ * If you want to create your own custom skin you need to replace "pivot-main" with your unique skin name
+ */
+.pivot-main .ms-inner-controls-cont {
+	max-width: none !important;
+}
+.pivot-main .ms-view {
+	left: 0 !important;
+}
+
+.pivot-main .ms-slide .ms-slide-vpbtn,
+.pivot-main .ms-video-btn{
+	width: 50px;
+	height: 51px;
+	background: url(skins/light-skin-1.png) no-repeat -14px -150px;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+}
+
+.pivot-main .ms-slide .ms-slide-vcbtn {
+	width: 30px;
+	height: 30px;
+	background: url(skins/light-skin-1.png) no-repeat -24px -28px;
+	top: 18px;
+	right: 30px;
+}
+
+/* controls */
+.pivot-main .ms-nav-next,
+.pivot-main .ms-nav-prev {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: 0 0;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: -30px 0 0;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	overflow: hidden;
+	opacity: 1;
+	color: rgba(0,0,0,.8);
+	text-shadow: 1px 1px 0 rgba(255,255,255,.3);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	cursor: pointer;
+	left: 30px;
+}
+.pivot-main .ms-nav-prev:before {
+	font-family: ElegantIcons;
+	font-size: 38px;
+	display: inline-block;
+	content: '#';
+	position: relative;
+	top: -3px;
+	color: #fff;
+	left: 11px;
+	padding-bottom: 22px;
+	top: 19px;
+}
+.pivot-main .ms-nav-next {
+	right: 30px;
+	left: auto;
+}
+.pivot-main .ms-nav-next:before {
+	font-family: ElegantIcons;
+	font-size: 38px;
+	display: inline-block;
+	content: '$';
+	position: relative;
+	top: -3px;
+	color: #fff;
+	left: 9px;
+	padding-bottom: 22px;
+	top: 19px;
+}
+.pivot-main .ms-nav-next:hover,
+.pivot-main .ms-nav-prev:hover {
+	background:rgba(255,255,255,.3);
+}
+
+.pivot-main .ms-bullet {
+	width: 8px;
+	height: 8px;
+	display: block;
+	background: #fff;
+	background: rgba(255,255,255,.5);
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 20px;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+}
+
+.pivot-main .ms-bullet-selected {
+	background: #fff;
+	background: rgba(255,255,255,1);
+}
+
+.pivot-main .ms-tooltip{
+	position: absolute;
+	z-index: 110;
+	cursor: auto;
+}
+
+.pivot-main .ms-tooltip-top .ms-tooltip-arrow,
+.pivot-main .ms-tooltip-bottom .ms-tooltip-arrow{
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.pivot-main .ms-tooltip-top .ms-tooltip-arrow{
+	border-top: solid 10px;
+	border-top-color: silver;
+	border-top-color: rgba(240, 240, 240, 0.88);
+	bottom: -10px;
+}
+
+.pivot-main .ms-tooltip-bottom .ms-tooltip-arrow {
+	border-bottom: solid 10px;
+	border-bottom-color: silver;
+	border-bottom-color: rgba(240, 240, 240, 0.88);
+	top: -10px;
+}
+
+.pivot-main .ms-tooltip-right .ms-tooltip-arrow,
+.pivot-main .ms-tooltip-left .ms-tooltip-arrow{
+	border-top: solid 10px transparent;
+	border-bottom: solid 10px transparent;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+}
+
+.pivot-main .ms-tooltip-right .ms-tooltip-arrow{
+	border-right: solid 10px;
+	border-right-color: silver;
+	border-right-color: rgba(240, 240, 240, 0.88);
+	left: -10px;
+}
+
+.pivot-main .ms-tooltip-left .ms-tooltip-arrow {
+	border-left: solid 10px;
+	border-left-color: silver;
+	border-left-color: rgba(240, 240, 240, 0.88);
+	right: -10px;
+}
+
+.pivot-main .ms-tooltip-point {cursor: pointer;}
+.pivot-main .ms-tooltip-point .ms-point-center {
+	width: 12px;
+	height: 12px; 
+	border-radius: 15px;
+	border: solid 2px #BBB;
+	background: white;
+	margin: -8px 0 0 -8px;
+	position: absolute;
+	z-index: 5;
+}
+
+.pivot-main .ms-tooltip-point .ms-point-border {
+	width: 22px;
+	height: 22px; 
+	background: black;
+	background:rgba(0, 0, 0, 0.36);
+	margin: -11px 0 0 -11px;
+	position: absolute;
+	border-radius: 15px;
+	
+	animation: point-anim 1.5s infinite ;
+	-moz-animation: point-anim 1.5s infinite;
+	-webkit-animation: point-anim 1.5s infinite;
+	-o-animation: point-anim 1.5s infinite;
+}
+
+.pivot-main .ms-tooltip {
+	max-width:200px;
+}
+
+.pivot-main .ms-tooltip-cont {
+	padding: 10px;
+	background: silver;
+	background: rgba(240, 240, 240, 0.88);
+	text-shadow: 0 1px 0px white;
+	margin-left: -1px;
+}
+.pivot-main h1 {
+	color: #ffffff;
+	display: block;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 38px;
+	font-weight: 300;
+	line-height: 56px;
+	border-width: 0px;
+	border-color: #ffffff;
+	border-style: none;
+	background-color: transparent;
+	text-decoration: none;
+}
+.pivot-main .btn {
+	margin-right: 10px;
+	margin-top: -10px;
+	box-sizing: border-box;
+}
+.pivot-main .ms-slide .ms-pattern {
+	z-index: 1;
+	-webkit-transform: translateZ(0px);
+	-moz-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+}
