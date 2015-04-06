@@ -179,9 +179,10 @@ jQuery(document).ready(function(){
 	// Offscreen Nav
 	
 	jQuery('.offscreen-toggle').click(function(){
+		jQuery('.container').toggleClass('reveal-nav');
 		jQuery('.main-container').toggleClass('reveal-nav');
 		jQuery('.offscreen-container').toggleClass('reveal-nav');
-		jQuery('.offscreen-menu .container').toggleClass('reveal-nav');
+		jQuery('.offscreen-menu .main-container').toggleClass('reveal-nav');
 	});
 	
 	jQuery('.main-container').click(function(){
@@ -250,7 +251,7 @@ jQuery(document).ready(function(){
 	
 	jQuery('.fullscreen-nav-container .menu li a').click(function(){
 		jQuery('.fullscreen-nav-toggle').removeClass('toggle-icon');
-			jQuery('.fullscreen-nav-container').removeClass('fade-fullscreen-nav');
+		jQuery('.fullscreen-nav-container').removeClass('fade-fullscreen-nav');
 		setTimeout(function(){
 			jQuery('.fullscreen-nav-container').removeClass('show-fullscreen-nav');
 		},500);
