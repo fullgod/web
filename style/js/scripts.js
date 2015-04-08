@@ -316,8 +316,11 @@ jQuery(document).ready(function(){
 	});
 	
 	jQuery('.fullscreen-element').each(function(){
-		jQuery(this).css('height', jQuery(window).height());
+		
+		var percentScreen = (jQuery(window).height() / 100) * 70;
+		jQuery(this).css('height', percentScreen);
 	});
+
 
 
 	// Feature Selector
