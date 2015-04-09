@@ -321,11 +321,6 @@ jQuery(document).ready(function(){
 		jQuery(this).css('height', percentScreen);
 	});
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/master
 	// Feature Selector
 	
 	jQuery('.selector-tabs li').click(function(){

@@ -33,6 +33,10 @@ if(class_exists('AQ_Page_Builder')) {
 		require_once ( "page_builder_blocks/section_title_block.php" );
 		aq_register_block('AQ_Section_Title_Block'); 
 	}
+		if(!( class_exists('AQ_Section_Title_Block_Ui') )){
+		require_once ( "page_builder_blocks/section_title_block_ui.php" );
+		aq_register_block('AQ_Section_Title_Block_Ui'); 
+	}
 	if(!( class_exists('AQ_Ebor_Text_Block') )){
 		require_once ( "page_builder_blocks/text_block.php" );
 		aq_register_block('AQ_Ebor_Text_Block');
