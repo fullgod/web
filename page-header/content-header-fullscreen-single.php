@@ -10,7 +10,6 @@
 ?>
 
 <header class="fullscreen-element no-pad centered-text">
-		
 	<div class="background-image-holder overlay parallax-background">
 		<?php echo wp_get_attachment_image($attachments[0], 'full', false, array('class' => 'background-image')); ?>
 	</div>

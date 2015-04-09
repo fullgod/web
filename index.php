@@ -16,9 +16,7 @@
 	$title = get_option('blog_title','Our Blog');
 	$sub = get_option('blog_subtitle', 'News & Views');
 ?>
-12312312
 	<header class="page-header">
-		
 		<?php if( $background ) : ?>
 			<div class="background-image-holder parallax-background">
 				<img class="background-image" alt="Background Image" src="<?php echo $background; ?>">
