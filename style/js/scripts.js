@@ -319,7 +319,6 @@ jQuery(document).ready(function(){
 		jQuery(this).css('height', jQuery(window).height());
 	});
 
-
 	// Feature Selector
 	
 	jQuery('.selector-tabs li').click(function(){
