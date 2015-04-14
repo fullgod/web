@@ -223,9 +223,11 @@ section:nth-of-type(even):not(section.vc_row){ background: @color-bg-primary; }
 .no-pad-left{ padding-left: 0px; }
 .no-pad-right{ padding-right: 0px; }
 .no-pad-bottom{ padding-bottom: 0px; }
+.padding-left-right{ padding-left: @standard-space !important; padding-right: @standard-space !important; }
 
 .space-top-small{ margin-top: @standard-space/4 !important; }
 .space-top-bottom{ margin-top: @standard-space !important; margin-bottom: @standard-space !important; }
+.space-bottom{ margin-bottom: @standard-space !important; }
 .space-bottom-medium{ margin-bottom: @standard-space/2 !important; }
 .space-bottom-large{ margin-bottom: @standard-space !important; }
 .space-bottom-xlarge{ margin-bottom: @standard-space*2 !important; }
@@ -649,7 +651,7 @@ img.phone-portrait{ max-height: 580px; }
 .side-image{ padding: 0px; position: relative; }
 .side-image .image-container{ overflow: hidden; position: absolute; height: 100%; padding: 0px; top: 0px; }
 .side-image .image-container.pull-right{ right: 0px; }
-.side-image .content{ padding-top: @standard-space; padding-bottom: @standard-space; }
+.side-image .content{ padding-top: @standard-space/2; padding-bottom: @standard-space/2; }
 .side-image h1{ margin-bottom: 40px; }
 .side-image p.lead{ margin-bottom: 64px; }
 
@@ -1177,7 +1179,7 @@ and (max-width : 767px) {
     
     // Side Image
     
-    .side-image .content{ padding-top: @standard-space; padding-bottom: @standard-space; }
+    .side-image .content{ }
     
     // Feature Selector
     
@@ -2203,7 +2205,6 @@ img.phone-portrait{ max-height: 580px; }
 .side-image{ padding: 0px; position: relative; }
 .side-image .image-container{ overflow: hidden; position: absolute; height: 100%; padding: 0px; top: 0px; }
 .side-image .image-container.pull-right{ right: 0px; }
-.side-image .content{ padding-top: @standard-space; padding-bottom: @standard-space; }
 .side-image h1{ margin-bottom: 40px; }
 .side-image p.lead{ margin-bottom: 64px; }
 
@@ -2731,7 +2732,7 @@ and (max-width : 767px) {
     
     // Side Image
     
-    .side-image .content{ padding-top: @standard-space; padding-bottom: @standard-space; }
+    .side-image .content{ padding-top: @standard-space/2; padding-bottom: @standard-space/2; }
     
     // Feature Selector
     

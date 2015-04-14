@@ -9,6 +9,8 @@ function ebor_section_title_ui_shortcode( $atts, $content = null ) {
 			array(
 				'title' => '',
 				'subtitle' => '',
+				'f_size' => '',
+				'f_color' => '',
 				'text_white' => 'No',
 				'vertical' => 'No',
 				'center' => 'Yes'
@@ -18,7 +20,9 @@ function ebor_section_title_ui_shortcode( $atts, $content = null ) {
 	
 	$output = false;
 	
-	$white_text = ( $text_white == 'Yes' ) ? 'text-white': '';
+	$font_size = htmlspecialchars_decode($f_size);
+	$font_color = htmlspecialchars_decode($f_color);
+	$misc_style = htmlspecialchars_decode($m_style);
 	$center_text = ( $center == 'Yes' ) ? 'text-center' : ''; 
 		
 		if( 'Yes' == $vertical )
@@ -28,7 +32,7 @@ function ebor_section_title_ui_shortcode( $atts, $content = null ) {
 				$output .= '<span class="'. $white_text .' alt-font '. $center_text .' ebor-block">'. htmlspecialchars_decode($subtitle) .'</span>';
 			
 			if( $title )
-				$output .= '<div class="space-top-bottom '. $center_text .'"><h1 class="webpro-reg '. $white_text .'">'. htmlspecialchars_decode($title) .'</h1></div>';
+				$output .= '<div class="space-top-bottom '. $center_text .'"><h1 class="webpro-reg" style="font-color:' .$misc_style. ''. $font_color .'px; font-size:'. $font_size .'px">'. htmlspecialchars_decode($title) .'</h1></div>';
 	
 			if( $content )
 				$output .= '<div class="lead '. $center_text .' '. $white_text .'">'. wpautop(do_shortcode(htmlspecialchars_decode($content))) . '</div>';
@@ -59,6 +63,18 @@ function ebor_section_title_ui_shortcode_vc() {
 				),
 				array(
 					"type" => "textfield",
+					"heading" => __("Размер шрифта заголовка", 'pivot'),
+					"param_name" => "f_size",
+					"value" => '',
+				),
+				array(
+					"type" => "textfield",
+					"heading" => __("Цвет шрифта заголовка", 'pivot'),
+					"param_name" => "f_color",
+					"value" => '',
+				),
+				array(
+					"type" => "textfield",
 					"heading" => __("Подзаголовок", 'pivot'),
 					"param_name" => "subtitle",
 					"value" => '',
@@ -79,7 +95,7 @@ function ebor_section_title_ui_shortcode_vc() {
 						'No',
 						'Yes'
 					),
-				),
+				),				
 				array(
 					"type" => "dropdown",
 					"heading" => __("Текст по центру?", 'pivot'),

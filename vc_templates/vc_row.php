@@ -29,9 +29,9 @@ if( 'image-left' == $background_style ){
 			</div>
 		</div>
 		
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-			    <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">';
+			    <div class="col-md-7 col-md-offset-5 col-sm-6 col-sm-offset-6 content padding-left-right clearfix">';
 	
 	$el_class = $this->getExtraClass($el_class);
 	
