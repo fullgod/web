@@ -13,6 +13,7 @@ function ebor_section_title_ui_shortcode( $atts, $content = null ) {
 				'f_color' => '',
 				'text_white' => 'No',
 				'vertical' => 'No',
+				'block_space' => '',
 				'center' => 'Yes'
 			), $atts 
 		) 
@@ -22,7 +23,7 @@ function ebor_section_title_ui_shortcode( $atts, $content = null ) {
 	
 	$font_size = htmlspecialchars_decode($f_size);
 	$font_color = htmlspecialchars_decode($f_color);
-	$misc_style = htmlspecialchars_decode($m_style);
+	$add_block_space; 
 	$center_text = ( $center == 'Yes' ) ? 'text-center' : ''; 
 		
 		if( 'Yes' == $vertical )
@@ -32,10 +33,10 @@ function ebor_section_title_ui_shortcode( $atts, $content = null ) {
 				$output .= '<span class="'. $white_text .' alt-font '. $center_text .' ebor-block">'. htmlspecialchars_decode($subtitle) .'</span>';
 			
 			if( $title )
-				$output .= '<div class="space-top-bottom '. $center_text .'"><h1 class="webpro-reg" style="font-color:' .$misc_style. ''. $font_color .'px; font-size:'. $font_size .'px">'. htmlspecialchars_decode($title) .'</h1></div>';
+				$output .= '<div class="'. $block_space .' '. $center_text .'"><h1 class="webpro-reg" style="color:'. $font_color .'; font-size:'. $font_size .'px">'. htmlspecialchars_decode($title) .'</h1></div>';
 	
 			if( $content )
-				$output .= '<div class="lead '. $center_text .' '. $white_text .'">'. wpautop(do_shortcode(htmlspecialchars_decode($content))) . '</div>';
+				$output .= '<div class="lead PTSerif-Regular '. $center_text .' '. $white_text .'">'. wpautop(do_shortcode(htmlspecialchars_decode($content))) . '</div>';
 			
 		if( 'Yes' == $vertical )
 			$output .= '</div>';
@@ -47,6 +48,9 @@ add_shortcode( 'pivot_section_title_ui', 'ebor_section_title_ui_shortcode' );
 /**
  * The VC Functions
  */
+ 
+ 
+ 
 function ebor_section_title_ui_shortcode_vc() {
 	vc_map( 
 		array(
@@ -68,10 +72,11 @@ function ebor_section_title_ui_shortcode_vc() {
 					"value" => '',
 				),
 				array(
-					"type" => "textfield",
+					"type" => "colorpicker",
 					"heading" => __("Цвет шрифта заголовка", 'pivot'),
 					"param_name" => "f_color",
-					"value" => '',
+					'description' => __( 'Выбрать цвет', 'js_composer' ),
+					'edit_field_class' => 'vc_col-sm-6'
 				),
 				array(
 					"type" => "textfield",
@@ -114,6 +119,21 @@ function ebor_section_title_ui_shortcode_vc() {
 						'Yes'
 					),
 				),
+				$add_block_space = array(
+					'type' => 'dropdown',
+					'heading' => __( 'Положение заголовка', 'js_composer' ),
+					'param_name' => 'block_space',
+					'value' => array(
+						__( 'No', 'js_composer' ) => '',
+						__( 'space', 'js_composer' ) => 'space',
+						__( 'space-bottom', 'js_composer' ) => 'space-bottom',
+						__( 'space-top-bottom', 'js_composer' ) => 'space-top-bottom',
+						__( 'space-top-bottom-medium', 'js_composer' ) => 'space-top-bottom-medium',
+						__( 'space-top-small', 'js_composer' ) => 'space-top-small',
+						__( 'space-bottom-medium', 'js_composer' ) => 'space-bottom-medium',
+						__( 'space-bottom-large', 'js_composer' ) => "space-bottom-large"
+					),
+				)
 			)
 		) 
 	);

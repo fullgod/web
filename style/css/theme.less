@@ -111,15 +111,17 @@
 .alt-font { font-family: @alt-font,"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
 
 .webpro { font-family: "webpro"; color:  #fff;}
-.webpro-reg { font-family: "webpro-reg"; font-size: 110px;color:  #fff;}
-.Futura { font-family: "Futura"; font-size: 110px;color:  #fff;}
-.ProximaNovaT-Thin{ font-family: "ProximaNovaT-Thin"; font-size: 110px;color:  #fff;}
-.MonoCondensed-Bold{ font-family: "MonoCondensed-Bold"; font-size: 110px;color:  #fff;}
-.PTSerif-Regular{ font-family: "PTSerif-Regular"; font-size: 110px;color:  #fff;}
-.PTSansPro-Caption{ font-family: "PTSansPro-Caption"; font-size: 110px;color:  #fff;}
-.ProximaNova-Regular{ font-family: "ProximaNova-Regular"; font-size: 110px;color:  #fff;}
-.ProximaNova-Extrabld{ font-family: "ProximaNova-Extrabld"; font-size: 110px;color:  #fff;}
-.Gothic725BlkBT{ font-family: "Gothic725BlkBT"; font-size: 110px;color:  #fff;}
+.webpro-reg { font-family: "webpro-reg"; font-size: 110px;color:#fff;}
+.Futura { font-family: "Futura"; font-size: 110px; color:#fff;}
+.ProximaNovaT-Thin{ font-family: "ProximaNovaT-Thin"; font-size: 110px; color: #fff;}
+.MonoCondensed-Bold{ font-family: "MonoCondensed-Bold"; font-size: 110px; color: #fff;}
+.PTSerif-Regular{ font-family: "PTSerif-Regular"; font-size: 110px; color: #fff;}
+.PTSansPro-Caption{ font-family: "PTSansPro-Caption"; font-size: 110px; color: #fff;}
+.ProximaNova-Regular{ font-family: "ProximaNova-Regular"; font-size: 110px; color: #fff;}
+.ProximaNova-Extrabld{ font-family: "ProximaNova-Extrabld"; font-size: 110px; color: #fff;}
+.Gothic725BlkBT{ font-family: "Gothic725BlkBT"; font-size: 110px; color: #fff;}
+
+@font-webpro-reg: "webpro-reg";
 //
 // Type & Global
 // --------------------------------------------------
@@ -225,8 +227,11 @@ section:nth-of-type(even):not(section.vc_row){ background: @color-bg-primary; }
 .no-pad-bottom{ padding-bottom: 0px; }
 .padding-left-right{ padding-left: @standard-space !important; padding-right: @standard-space !important; }
 
+.space{ margin: @standard-space/2 !important;}
 .space-top-small{ margin-top: @standard-space/4 !important; }
 .space-top-bottom{ margin-top: @standard-space !important; margin-bottom: @standard-space !important; }
+.space-top-bottom-medium{ margin-top: @standard-space/2 !important; margin-bottom: @standard-space/2 !important; }
+.space-top-bottom-medium{ margin-top: @standard-space/2 !important; margin-bottom: @standard-space/2 !important; }
 .space-bottom{ margin-bottom: @standard-space !important; }
 .space-bottom-medium{ margin-bottom: @standard-space/2 !important; }
 .space-bottom-large{ margin-bottom: @standard-space !important; }
@@ -589,10 +594,14 @@ img.phone-portrait{ max-height: 580px; }
 .store-link img{ height: 50px; }
 
 .feature-icon-left{ overflow: hidden; margin-bottom: 40px; float: left; }
-.feature-icon-left .icon-holder{ width: 45px; float: left; }
+.feature-icon-left .icon-holder{ width: 10%; float: left; }
 .feature-icon-left i{ font-size: 32px; }
-.feature-icon-left .feature-text{ width: 217px; float: left; padding-top: 8px; }
-
+.feature-icon-left .feature-text{ width: 90%; float: left; padding-top: 3px;}
+.feature-icon-left .feature-text { 
+	h6, p	{ font-family: @font-webpro-reg;}
+	h6		{ font-size: 28px; margin-bottom: 16px; padding-top: 2px; }
+	p 		{ font-size: 16px; color: #404349; padding-top: 2px; }
+}
 .feature-box{ padding: 64px 40px; position: relative; z-index: 1; overflow: hidden; min-height: 397px; }
 .feature-box .background-image-holder{ z-index: 0; left: 0; }
 .feature-box .background-image-holder.overlay:before{ .overlay-params(@opacity-strength: 0.3, @background-color: @color-heading); z-index: -1; }
@@ -2143,9 +2152,9 @@ img.phone-portrait{ max-height: 580px; }
 .store-link img{ height: 50px; }
 
 .feature-icon-left{ overflow: hidden; margin-bottom: 40px; float: left; }
-.feature-icon-left .icon-holder{ width: 45px; float: left; }
+.feature-icon-left .icon-holder{ width: 10%; float: left; }
 .feature-icon-left i{ font-size: 32px; }
-.feature-icon-left .feature-text{ width: 217px; float: left; padding-top: 8px; }
+.feature-icon-left .feature-text{ width: 90%; float: left; padding-top: 3px; }
 
 .feature-box{ padding: 64px 40px; position: relative; z-index: 1; overflow: hidden; min-height: 397px; }
 .feature-box .background-image-holder{ z-index: 0; left: 0; }
