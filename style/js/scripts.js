@@ -317,7 +317,7 @@ jQuery(document).ready(function(){
 	
 	jQuery('.fullscreen-element').each(function(){
 		
-		var percentScreen = (jQuery(window).height() / 100) * 70;
+		var percentScreen = (jQuery(window).height() / 100) * 80;
 		jQuery(this).css('height', percentScreen);
 	});
 
