@@ -26,4 +26,4 @@ blog block - http://codepen.io/suez/pen/ByvKXE
 
 css tricks - http://tympanus.net/codrops/2015/03/31/prism-effect-slider-canvas/
 
-
+bg generator - qrohlf.com/trianglify-generator/
