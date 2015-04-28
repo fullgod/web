@@ -7,10 +7,11 @@ function eborAlignVertical(){
 		var that = jQuery(this);
 		var height = that.height();
 		var parentHeight = that.parents('.row').height();
-		var padAmount = (parentHeight / 2) - (height/2);
+		var padAmount = (parentHeight / 2) - (height/ 2);
 		that.css('padding-top', padAmount);
 	});
 }
+
 function alignVertical(){
 		jQuery('.align-vertical').each(function(){
 			var that = jQuery(this);
