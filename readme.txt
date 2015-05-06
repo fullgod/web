@@ -17,16 +17,9 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
+Development by TommusRhodus.
+www.madeinebor.com
+www.eborthemes.com
+www.themeforest.net/user/tommusrhodus
 
-login page - http://codepen.io/suez/pen/dPqxoM
-
-page loader - http://tympanus.net/codrops/2015/03/25/jump-loader-animation-svg-gsap/
-
-blog block - http://codepen.io/suez/pen/ByvKXE
-
-css tricks - http://tympanus.net/codrops/2015/03/31/prism-effect-slider-canvas/
-
-bg generator - qrohlf.com/trianglify-generator/
-
-http://corner45.com/#fourthPage
-http://vershi.ru/
+2014 Tom Rhodes.

@@ -35,10 +35,6 @@ if(!( function_exists('ebor_clients_shortcode') ))
 if(!( function_exists('ebor_section_title_shortcode') ))
 	require_once('vc_blocks/vc_section_title_block.php');
 	
-//Grab Section Title Shortcode
-if(!( function_exists('ebor_section_title_ui_shortcode') ))
-	require_once('vc_blocks/vc_section_title_block_ui.php');
-	
 //Grab Text Shortcode
 if(!( function_exists('ebor_text_shortcode') ))
 	require_once('vc_blocks/vc_text_block.php');

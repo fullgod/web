@@ -1,6 +1,9 @@
 <?php 
 	$directory = trailingslashit(get_template_directory_uri()); 
 	
+	$light = get_option('light_logo', $directory . 'style/img/logo-light.png');
+	$dark = get_option('dark_logo', $directory . 'style/img/logo-dark.png');
+	
 	$address = get_option('header_address', '300 Collins St Melbourne');
 	$email = get_option('header_email', 'hello@pivot.net');
 	
@@ -8,15 +11,36 @@
 ?>
 
 <nav class="top-bar overlay-bar offscreen-menu">
-	<div class="fullscreen-nav fade-fullscreen-nav container">
-		<div class="row nav-menu clearfix">	
-			<div class="pull-right">
-				<div class="offscreen-toggle">			
+	<div class="container">
+	
+		<div class="row nav-menu clearfix">
+			<div class="col-sm-2 col-xs-6">
+				<a href="<?php echo home_url(); ?>">
+					<?php
+						if( $light )
+							echo '<img class="logo logo-light" alt="Logo" src="'. $light .'">';
+						
+						if( $dark )
+							echo '<img class="logo logo-dark" alt="Logo" src="'. $dark .'">';
+					?>
+				</a>
+			</div>
+			
+			<div class="col-sm-2 col-xs-6 text-right pull-right">
+				<div class="offscreen-toggle">
 					<i class="icon icon_menu text-white"></i>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div><!--end of row-->
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<hr class="no-margin">
+			</div>
+		</div><!--end of row-->
+		
+	</div><!--end of container-->
+	
 	<div class="offscreen-container">
 		<?php
 			if( $light )

@@ -25,20 +25,6 @@ custom.css and it will override the style in this file. You have been warned! :)
 /*-----------------------------------------------------------------------------------*/
 /*	WORDPRESS STYLES
 /*-----------------------------------------------------------------------------------*/
-
-@font-face{font-family:'webpro'; src:url('style/fonts/web-pro.woff') format('woff'); font-style:italic;font-weight:400;}
-@font-face{font-family:'webpro-reg'; src:url('style/fonts/webpro-regular.woff') format('woff'); font-style:normal;font-weight:400;}
-
-@font-face{font-family:'ProximaNovaT-Thin';src:url('style/fonts/ProximaNovaT-Thin.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'MonoCondensed-Bold';src:url('style/fonts/MonoCondensed-Bold.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'PTSerif-Regular';src:url('style/fonts/PTSerif-Regular.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'PTSansPro-Caption';src:url('style/fonts/PTSansPro-Caption.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'Futura';src:url('style/fonts/Futura.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'ProximaNova-Regular';src:url('style/fonts/ProximaNova-Regular.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'ProximaNova-Extrabld';src:url('style/fonts/ProximaNova-Extrabld.woff') format('woff'); font-weight:normal;font-style:normal;}
-@font-face{font-family:'Gothic725BlkBT';src:url('style/fonts/Gothic725BlkBT.woff') format('woff'); font-weight:normal;font-style:normal;}
-
-
 .visual-composer-active .offscreen-toggle i {
 	margin-right: 15px;
 }

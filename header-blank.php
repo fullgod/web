@@ -20,7 +20,7 @@
 	 * Override this by copying the /inc/ folder and content-preloader.php to your child theme.
 	 */
 	get_template_part('inc/content', 'preloader');
-	echo "123";
+	
 	/**
 	 * Get Wrapper Start - Uses get_template_part for simple child themeing.
 	 */

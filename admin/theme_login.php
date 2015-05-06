@@ -6,7 +6,7 @@ if(!( function_exists('ebor_custom_admin') )){
 		$protocol = is_ssl() ? 'https' : 'http';
 		$body_font = get_option('body_font_url', $protocol . '://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700');
 		$heading_font = get_option('heading_font_url', $protocol . '://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700');
-		$alt_font = get_option('alt_font_url', $protocol . '://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=cyrillic');
+		$alt_font = get_option('alt_font_url', $protocol . '://fonts.googleapis.com/css?family=Raleway:700');
 	
 		//Enqueue Fonts
 		if( $body_font )
@@ -39,7 +39,7 @@ if(!( function_exists('ebor_custom_admin') )){
 
 if(!( function_exists('ebor_login_header') )){
 	function ebor_login_header(){
-		get_template_part('header/content-header-login');
+		get_template_part('header/content-header-overlay');
 		
 		/**
 		 * Get Wrapper Start - Uses get_template_part for simple child themeing.

@@ -166,7 +166,7 @@ if( class_exists('Ebor_Options') ){
 	$ebor_options->add_setting('input', 'heading_font', 'Heading Font', 'fonts_section', 'Open Sans', 20);
 	$ebor_options->add_setting('textarea', 'heading_font_url', 'Heading Font URL Parameter', 'fonts_section', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700', 25);
 	$ebor_options->add_setting('input', 'alt_font', 'Alternate Font', 'fonts_section', 'Raleway', 40);
-	$ebor_options->add_setting('textarea', 'alt_font_url', 'Alternate Font URL Parameter', 'fonts_section', 'http://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=cyrillic', 45);
+	$ebor_options->add_setting('textarea', 'alt_font_url', 'Alternate Font URL Parameter', 'fonts_section', 'http://fonts.googleapis.com/css?family=Raleway:700', 45);
 	
 	//Colour Options
 	$ebor_options->add_setting('color', 'color-primary', 'Primary Colour', 'colours_section', '#e74c3c', 5);
